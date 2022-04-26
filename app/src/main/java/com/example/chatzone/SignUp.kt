@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.NumberPicker
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
@@ -17,6 +18,7 @@ class SignUp : AppCompatActivity() {
     private lateinit var btnSignUp: Button
     private lateinit var mAuth: FirebaseAuth
     private  lateinit var mDbRef: DatabaseReference
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

@@ -7,6 +7,7 @@ class Message {
     constructor(){}
 
     constructor(message: String?,senderId: String?){
-
+        this.message = message
+        this.senderId =senderId
     }
 }
