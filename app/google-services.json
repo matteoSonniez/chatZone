@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "718750092128",
+    "project_id": "chatzone-bf452",
+    "storage_bucket": "chatzone-bf452.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:718750092128:android:35fb429bf39ad973d82c05",
+        "android_client_info": {
+          "package_name": "com.example.chatzone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "718750092128-33v9s5sool7rvjccsikfpt4qs6sqh1hs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC97GmYSFH6ReLK3fmkwbVHVrkumMc33hM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "718750092128-33v9s5sool7rvjccsikfpt4qs6sqh1hs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
