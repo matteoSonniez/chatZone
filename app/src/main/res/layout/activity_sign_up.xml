@@ -5,13 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SignUp">
+
     <ImageView
         android:id="@+id/app_logo"
         android:layout_width="158dp"
         android:layout_height="158dp"
-        android:src="@drawable/logo"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="60dp"/>
+        android:layout_marginTop="80dp"
+        android:src="@drawable/logo" />
     <EditText
         android:id="@+id/edt_name"
         android:layout_width="match_parent"
@@ -34,29 +35,66 @@
         android:background="@drawable/edt_background"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"/>
+
     <EditText
         android:id="@+id/edt_password"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_below="@id/edt_email"
-        android:layout_marginTop="30dp"
-        android:hint="Password"
-        android:paddingLeft="15dp"
-        android:background="@drawable/edt_background"
         android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"/>
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/edt_background"
+        android:hint="Password"
+        android:paddingLeft="15dp" />
 
 
     <Button
         android:id="@+id/btnSignUp"
         android:layout_width="130dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/edt_password"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="140dp"
+        android:layout_marginEnd="140dp"
+        android:layout_marginBottom="85dp"
+        android:background="@drawable/btn_background"
         android:text="Inscription"
-        android:textSize="16sp"
         android:textColor="@color/white"
-        android:background="@drawable/btn_background"/>
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:background="@drawable/btn_back"
+        android:text="Retour" />
+
+    <NumberPicker
+        android:id="@+id/num"
+        android:layout_width="wrap_content"
+        android:layout_height="112dp"
+        android:layout_below="@id/edt_password"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="99dp"
+        android:layout_marginBottom="153dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="190dp"
+        android:layout_marginBottom="177dp"
+        android:text="Selectionner votre âge: "
+        android:textSize="18sp" />
+
+
 
 </RelativeLayout>

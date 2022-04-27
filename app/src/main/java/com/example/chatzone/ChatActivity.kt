@@ -3,6 +3,7 @@ package com.example.chatzone
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageView
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -17,6 +18,7 @@ class ChatActivity : AppCompatActivity() {
     private  lateinit var messageAdapter: MessageAdapter
     private lateinit var messageList: ArrayList<Message>
     private lateinit var mDbRef: DatabaseReference
+    private lateinit var btnBack: Button
 
     var receiveRoom: String? = null
     var senderRoom: String? = null
@@ -39,6 +41,7 @@ class ChatActivity : AppCompatActivity() {
         chatRecyclerView = findViewById(R.id.chatRecyclerView)
         messageBox = findViewById(R.id.messageBox)
         sendButton = findViewById(R.id.sentButton)
+        btnBack = findViewById(R.id.btnBack)
         messageList = ArrayList()
         messageAdapter = MessageAdapter(this, messageList)
 
@@ -64,6 +67,10 @@ class ChatActivity : AppCompatActivity() {
                 }
 
             })
+        btnBack.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
 
         sendButton.setOnClickListener {
             val message = messageBox.text.toString()
